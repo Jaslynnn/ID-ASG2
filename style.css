@@ -1,0 +1,121 @@
+html{
+  overflow-x: auto; 
+
+}
+
+.slide{
+    width:100vw;
+    height:100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background-image: url("Images/cool\ liquid\ background\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:400vw;
+
+}
+
+body{
+    background-image: url("Images/cool\ liquid\ background\ 1.png");
+    background-repeat: no-repeat;
+    background-size:200%;
+
+}
+
+
+.one{
+     
+}
+
+.two{
+  
+
+}
+
+.three{
+
+
+}
+
+.four{
+
+}
+
+.outer-wrapper{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position:absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth; 
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+.brand{
+    margin-top: 0.5vw ;
+    margin-left: 2vw ;
+    color: blueviolet;
+    background:none;
+    border: none;
+    float: left;
+}
+
+
+.card{
+    display:flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 15%;
+    margin-left: 30%;
+    height: 100%;
+    width: 55%;
+    border-radius:25px;
+    color: white;
+    border: 3px solid;
+    z-index:10px;
+    float:left;
+}
+
+.col-sm-6{
+    padding-left: 1%;
+}
+
+
+.card-img-top{
+    margin-top: 5%;
+    border-radius:100px;
+}
+.card-body{
+margin: 2%;
+padding: 5%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: bottom;
+text-align: center;
+background-color: blueviolet;
+border-radius:25px;
+
+}
+
+.btn {
+justify-content: center;
+align-items: right;
+color:  blueviolet;
+background-color: white;
+border-radius:10px;
+
+
+}
