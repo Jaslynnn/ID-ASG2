@@ -3,6 +3,14 @@ html{
 
 }
 
+.signup{
+    position: center;
+    margin:10%;
+    padding:3%;
+    background-color: rgb(211, 153, 255 ) ;
+    border-radius: 25px;
+    
+}
 .slide{
     width:100vw;
     height:100vh;
@@ -22,29 +30,10 @@ html{
 
 body{
     background-image: url("Images/cool\ liquid\ background\ 1.png");
-    background-repeat: no-repeat;
     background-size:200%;
 
 }
 
-
-.one{
-     
-}
-
-.two{
-  
-
-}
-
-.three{
-
-
-}
-
-.four{
-
-}
 
 .outer-wrapper{
     width: 100vh;
@@ -62,7 +51,13 @@ body{
 ::-webkit-scrollbar{
     display:none;
 }
+.two{
+    padding-top: 1%;
+    justify-content: center;
+    align-items: center;
 
+    
+}
 .brand{
     margin-top: 0.5vw ;
     margin-left: 2vw ;
@@ -70,36 +65,51 @@ body{
     background:none;
     border: none;
     float: left;
+    width: 10%;
 }
 
-
+.row{
+    justify-content: center;
+    align-items: center;
+}
 .card{
     display:flex;
     justify-content: center;
-    align-items: top;
-    margin-top: 15%;
-    margin-left: 30%;
-    height: 100%;
-    width: 55%;
+    align-items: center;
+    width: fit-content;
+    margin-top: 5%;
+    margin-left: 10%;
     border-radius:25px;
     color: white;
     border: 3px solid;
-    z-index:10px;
-    float:left;
+
 }
 
 .col-sm-6{
-    padding-left: 1%;
+    margin-left: 5rem;
+    padding-left: 5%;
+    width:29rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.card-img-top{
+.card-img-top1{
     margin-top: 5%;
-    border-radius:100px;
+    border-radius:300px;
+    width: 70%;
+    
 }
+
+.card-img-top2{
+    border-radius:300px;
+    width: 60%;
+
+    
+}
+
 .card-body{
-margin: 2%;
-padding: 5%;
+
 display:flex;
 flex-direction: column;
 justify-content: center;
