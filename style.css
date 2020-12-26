@@ -31,6 +31,8 @@ html{
 body{
     background-image: url("Images/cool\ liquid\ background\ 1.png");
     background-size:200%;
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
 
 }
 
@@ -82,6 +84,7 @@ body{
     border-radius:25px;
     color: white;
     border: 3px solid;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -93,6 +96,12 @@ body{
     align-items: center;
 }
 
+.card-img-top{
+    margin:3%;
+    border-radius:100px;
+    width:95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+}
 
 .card-img-top1{
     margin-top: 5%;
@@ -128,4 +137,12 @@ background-color: white;
 border-radius:10px;
 
 
+}
+
+.d-flex {
+    margin-left: 2%
+}
+.input-group{
+    margin-left: 10%;
+    width:20%;
 }
