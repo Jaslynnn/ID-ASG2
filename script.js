@@ -2,6 +2,7 @@ let BreakfastSearch = document.querySelector("#v-pills-breakfast-tab")
 let LunchSearch = document.querySelector("#v-pills-lunch-tab")
 let DinnerSearch = document.querySelector("#v-pills-dinner-tab")
 let DessertsSearch = document.querySelector("#v-pills-desserts-tab")
+let OthersSearch = document.querySelector("#search")
 
 //Add an event listener that runs the function sendApiRequest when clicked.
 
@@ -20,17 +21,20 @@ DinnerSearch.addEventListener("click", () =>{
   sendApiRequestDinner()
 })
 
-DinnerSearch.addEventListener("click", () =>{
+DessertsSearch.addEventListener("click", () =>{
   console.log("button pressed")
   sendApiRequestDesserts()
 })
 
+OthersSearch.addEventListener("click", () =>{
+  console.log("button pressed")
+  sendApiRequestOthers()
+})
 
 //An asynchronous function to fetch data from api.
 async function sendApiRequestBreakfast(){
     let APP_ID ="405a394c"
     let API_KEY ="3104f9ddfb4ee96509c47474e498a8e7"
-    let food = document.getElementById("v-pills-breakfast-tab").value
     let response = await fetch (`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=breakfast`);
     console.log(response)
     let data = await response.json()
@@ -41,7 +45,6 @@ async function sendApiRequestBreakfast(){
 async function sendApiRequestLunch(){
   let APP_ID ="405a394c"
   let API_KEY ="3104f9ddfb4ee96509c47474e498a8e7"
-  let food = document.getElementById("v-pills-lunch-tab").value
   let response = await fetch (`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=yummy`);
   console.log(response)
   let data = await response.json()
@@ -52,7 +55,6 @@ async function sendApiRequestLunch(){
 async function sendApiRequestDinner(){
   let APP_ID ="405a394c"
   let API_KEY ="3104f9ddfb4ee96509c47474e498a8e7"
-  let food = document.getElementById("v-pills-dinner-tab").value
   let response = await fetch (`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=savoury`);
   console.log(response)
   let data = await response.json()
@@ -63,7 +65,6 @@ async function sendApiRequestDinner(){
 async function sendApiRequestDesserts(){
   let APP_ID ="405a394c"
   let API_KEY ="3104f9ddfb4ee96509c47474e498a8e7"
-  let food = document.getElementById("v-pills-desserts-tab").value
   let response = await fetch (`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=dessert`);
   console.log(response)
   let data = await response.json()
@@ -71,12 +72,75 @@ async function sendApiRequestDesserts(){
   userAPIDataDesserts(data)
 }
 
-
+async function sendApiRequestOthers(){
+  let APP_ID ="405a394c"
+  let API_KEY ="3104f9ddfb4ee96509c47474e498a8e7"
+  let food = document.getElementById("foodsearch").value
+  let response = await fetch (`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${food}`);
+  console.log(response)
+  let data = await response.json()
+  console.log(data)
+  userAPIDataOthers(data)
+}
 
 
 //function that does something with the data received from the API. Name customised to whatever you are doing with it
 function userAPIDataBreakfast(data){
     document.querySelector("#v-pills-breakfast").innerHTML = `
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">${data.hits[0].recipe.label}</h5>
+        <p class="card-text">
+        <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
+        <li>Calories: ${data.hits[0].recipe.calories}</li>
+        <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
+        <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+    `
+
+
+}
+//Add in the calories, source credit, create filters,
+
+function userAPIDataLunch(data){
+  document.querySelector("#v-pills-lunch").innerHTML = `
+  <div class="card mb-3" style="max-width: 540px;">
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">${data.hits[0].recipe.label}</h5>
+      <p class="card-text"> Calories: ${data.hits[0].recipe.calories}
+      Health Labels: ${data.hits[0].recipe.healthLabels}</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+  `
+}
+function userAPIDataDinner(data){
+    document.querySelector("#v-pills-dinner").innerHTML = `
     <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
@@ -92,29 +156,15 @@ function userAPIDataBreakfast(data){
         </div>
     </div>
   </div>
-</div>
-
-
-    <div class="card col-3" style="width: 18rem;">
-  <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-    <p class="card-text"> 
-    Calories: ${data.hits[0].recipe.calories}
-    Health Labels: ${data.hits[0].recipe.healthLabels} </p>
-    <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go somewhere</a>
   </div>
-</div>
 
-
+  
     `
 
-
 }
-//Add in the calories, source credit, create filters,
 
-function userAPIDataLunch(data){
-  document.querySelector("#v-pills-lunch").innerHTML = `
+function userAPIDataDesserts(data){
+  document.querySelector("#v-pills-desserts").innerHTML = `
   <div class="card mb-3" style="max-width: 540px;">
 <div class="row g-0">
   <div class="col-md-4">
@@ -147,44 +197,10 @@ function userAPIDataLunch(data){
 
   `
 }
-function userAPIDataDinner(data){
-    document.querySelector("#v-pills-dinner").innerHTML = `
-    <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-        <p class="card-text"> Calories: ${data.hits[0].recipe.calories}
-        Health Labels: ${data.hits[0].recipe.healthLabels}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
-        </div>
-    </div>
-  </div>
-  </div>
-  
-  
-    <div class="card col-3" style="width: 18rem;">
-  <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-    <p class="card-text"> 
-    Calories: ${data.hits[0].recipe.calories}
-    Health Labels: ${data.hits[0].recipe.healthLabels} </p>
-    <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go somewhere</a>
-  </div>
-  </div>
-  
-  
-    `
 
-}
-
-function userAPIDataDesserts(data){
-  document.querySelector("#v-pills-desserts").innerHTML = `
+function userAPIDataOthers(data){
+  document.querySelector(".others").innerHTML = `
+  <br></br>
   <div class="card mb-3" style="max-width: 540px;">
 <div class="row g-0">
   <div class="col-md-4">
