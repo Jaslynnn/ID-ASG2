@@ -74,6 +74,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .card{
     display:flex;
     justify-content: center;
@@ -96,6 +97,9 @@ body{
     align-items: center;
 }
 
+.mb-3{
+margin-left: 2%;
+}
 .card-img-top{
     margin:3%;
     border-radius:100px;
@@ -141,4 +145,21 @@ border-radius:10px;
 
 .d-flex {
     margin-left: 2%
+}
+
+.nav-link {
+
+    color: white;
+}
+
+.v-pills-tab{
+    background-color: blueviolet;
+}
+
+.nav-link:hover {
+    background-color: blueviolet;
+    color: white;
+}
+.text-muted{
+    color: white;
 }
