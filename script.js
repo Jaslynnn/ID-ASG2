@@ -107,6 +107,27 @@ function userAPIDataBreakfast(data){
   </div>
 </div>
 
+<div class="card mb-3" style="max-width: 540px;">
+<div class="row g-0">
+  <div class="col-md-4">
+    <img src="${data.hits[1].recipe.image}" class="card-img-top" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <h5 class="card-title">${data.hits[1].recipe.label}</h5>
+      <p class="card-text">
+      <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
+      <li>Calories: ${data.hits[1].recipe.calories}</li>
+      <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
+      <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
+      </div>
+  </div>
+</div>
+</div>
+
+
 
 
     `
