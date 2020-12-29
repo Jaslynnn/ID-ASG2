@@ -31,8 +31,7 @@ html{
 body{
     background-image: url("Images/cool\ liquid\ background\ 1.png");
     background-size:200%;
-    font-family: 'Cuprum', sans-serif;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -79,7 +78,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: auto;
     margin-top: 5%;
     margin-left: 10%;
     border-radius:25px;
@@ -87,7 +86,15 @@ body{
     border: 3px solid;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+
 }
+
+.card:hover{
+    background-color: blueviolet;
+}
+
 
 .col-sm-6{
     margin-left: 5rem;
@@ -102,9 +109,17 @@ margin-left: 2%;
 }
 .card-img-top{
     margin:3%;
-    border-radius:100px;
-    width:95%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    border-radius:25px;
+    width:200%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+
+}
+
+.card-img-top:hover{
+    transform: translateX(-50%);
 }
 
 .card-img-top1{
@@ -130,8 +145,15 @@ align-items: bottom;
 text-align: center;
 background-color: blueviolet;
 border-radius:25px;
+margin-top: 3%;
+margin-bottom: 3%;
+
+transition: width 10s;
+transition-timing-function: ease-in-out;
 
 }
+
+
 
 .btn {
 justify-content: center;

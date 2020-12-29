@@ -100,11 +100,12 @@ function userAPIDataBreakfast(data){
         <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
         <li>Calories: ${data.hits[0].recipe.calories}</li>
         <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-        <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+        <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
         <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
         <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
         </div>
     </div>
+    
   </div>
 </div>
 
@@ -120,7 +121,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[1].recipe.calories}</li>
       <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
       <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -140,7 +141,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[2].recipe.calories}</li>
       <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[2].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
       <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -160,7 +161,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[3].recipe.calories}</li>
       <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[3].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
       <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -180,7 +181,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[4].recipe.calories}</li>
       <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[4].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
       <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -200,7 +201,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[5].recipe.calories}</li>
       <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[5].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
       <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -220,7 +221,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[6].recipe.calories}</li>
       <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[6].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
       <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -240,7 +241,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[7].recipe.calories}</li>
       <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[7].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
       <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -260,7 +261,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[8].recipe.calories}</li>
       <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[8].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
       <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -280,7 +281,7 @@ function userAPIDataBreakfast(data){
       <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[9].recipe.calories}</li>
       <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[9].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
       <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -313,7 +314,7 @@ function userAPIDataLunch(data){
       <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[0].recipe.calories}</li>
       <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
       <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -333,7 +334,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[1].recipe.calories}</li>
     <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
     <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -353,7 +354,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[2].recipe.calories}</li>
     <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[2].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
     <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -373,7 +374,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[3].recipe.calories}</li>
     <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[3].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
     <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -393,7 +394,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[4].recipe.calories}</li>
     <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[4].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
     <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -413,7 +414,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[5].recipe.calories}</li>
     <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[5].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
     <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -433,7 +434,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[6].recipe.calories}</li>
     <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[6].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
     <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -453,7 +454,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[7].recipe.calories}</li>
     <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[7].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
     <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -473,7 +474,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[8].recipe.calories}</li>
     <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[8].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
     <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -493,7 +494,7 @@ function userAPIDataLunch(data){
     <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[9].recipe.calories}</li>
     <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[9].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
     <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -523,7 +524,7 @@ function userAPIDataDinner(data){
         <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
         <li>Calories: ${data.hits[0].recipe.calories}</li>
         <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-        <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+        <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
         <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
         <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
         </div>
@@ -543,7 +544,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[1].recipe.calories}</li>
       <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
       <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -563,7 +564,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[2].recipe.calories}</li>
       <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[2].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
       <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -583,7 +584,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[3].recipe.calories}</li>
       <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[3].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
       <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -603,7 +604,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[4].recipe.calories}</li>
       <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[4].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
       <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -623,7 +624,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[5].recipe.calories}</li>
       <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[5].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
       <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -643,7 +644,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[6].recipe.calories}</li>
       <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[6].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
       <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -663,7 +664,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[7].recipe.calories}</li>
       <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[7].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
       <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -683,7 +684,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[8].recipe.calories}</li>
       <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[8].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
       <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -703,7 +704,7 @@ function userAPIDataDinner(data){
       <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[9].recipe.calories}</li>
       <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[9].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
       <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -737,7 +738,7 @@ function userAPIDataDesserts(data){
       <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[0].recipe.calories}</li>
       <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
       <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -757,7 +758,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[1].recipe.calories}</li>
     <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
     <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -777,7 +778,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[2].recipe.calories}</li>
     <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[2].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
     <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -797,7 +798,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[3].recipe.calories}</li>
     <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[3].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
     <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -817,7 +818,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[4].recipe.calories}</li>
     <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[4].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
     <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -837,7 +838,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[5].recipe.calories}</li>
     <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[5].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
     <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -857,7 +858,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[6].recipe.calories}</li>
     <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[6].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
     <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -877,7 +878,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[7].recipe.calories}</li>
     <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[7].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
     <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -897,7 +898,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[8].recipe.calories}</li>
     <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[8].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
     <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -917,7 +918,7 @@ function userAPIDataDesserts(data){
     <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[9].recipe.calories}</li>
     <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[9].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
     <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -947,7 +948,7 @@ function userAPIDataOthers(data){
       <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
       <li>Calories: ${data.hits[0].recipe.calories}</li>
       <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[0].recipe.ingredients}</p>
+      <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
       <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
       <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
       </div>
@@ -967,7 +968,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[1].recipe.calories}</li>
     <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[1].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
     <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -987,7 +988,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[2].recipe.calories}</li>
     <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[2].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
     <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1007,7 +1008,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[3].recipe.calories}</li>
     <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[3].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
     <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1027,7 +1028,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[4].recipe.calories}</li>
     <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[4].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
     <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1047,7 +1048,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[5].recipe.calories}</li>
     <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[5].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
     <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1067,7 +1068,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[6].recipe.calories}</li>
     <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[6].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
     <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1087,7 +1088,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[7].recipe.calories}</li>
     <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[7].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
     <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1107,7 +1108,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[8].recipe.calories}</li>
     <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[8].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
     <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1127,7 +1128,7 @@ function userAPIDataOthers(data){
     <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
     <li>Calories: ${data.hits[9].recipe.calories}</li>
     <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[9].recipe.ingredients}</p>
+    <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
     <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
     <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
@@ -1144,3 +1145,7 @@ function userAPIDataOthers(data){
 }
 
 //Add in the calories, source credit, create filters,
+
+ //localStorage Create button that allows users to save recipes to local storage and display information on a saved area
+ //2 event listeners(one to save info to local storage)(one to retrieve data from local storage in form of html)
+ //bookmarkIcon add event listener, when clicked fills up to white.
