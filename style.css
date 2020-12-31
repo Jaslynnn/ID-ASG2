@@ -3,14 +3,6 @@ html{
 
 }
 
-.signup{
-    position: center;
-    margin:10%;
-    padding:3%;
-    background-color: rgb(211, 153, 255 ) ;
-    border-radius: 25px;
-    
-}
 .slide{
     width:100vw;
     height:100vh;
@@ -83,7 +75,7 @@ body{
     margin-left: 10%;
     border-radius:25px;
     color: white;
-    border: 3px solid;
+    border: 2px solid;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     transition: 0.5s;
@@ -114,7 +106,7 @@ margin-left: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
     transition-duration: 0.3s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
 
 }
 
@@ -150,6 +142,7 @@ margin-bottom: 3%;
 
 transition: width 10s;
 transition-timing-function: ease-in-out;
+transform: translateX(-0%);
 
 }
 
@@ -185,3 +178,58 @@ border-radius:10px;
 .text-muted{
     color: white;
 }
+
+/* Sign up page*/
+
+.signup{
+    position: absolute;
+    margin-left: 33%;
+    margin-bottom: 10%;
+    align-items: center;
+    width: 30%;
+    padding:3%;
+    color: white;
+    background-color: blueviolet;
+    border-color:white ;
+    border-radius: 25px;
+    border: 10px solid ;
+
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+
+    
+}
+.signup:hover{
+width: 40%;
+
+}
+
+.form-control{
+    background-color:  rgba(255, 255, 255, 0.45);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:none;
+}
+.form-control:hover, .form-control:active,
+.form-control:focus {
+    background-color:  #4E0E78;
+    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:white;
+  }
+
+  

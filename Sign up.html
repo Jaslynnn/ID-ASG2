@@ -58,22 +58,28 @@
 
 
     <div class="signup">
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
+        <form class="needs-validation" novalidate>
+            <div class="col-md-8">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="*No other Characters"required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
-            <div class="col-md-4">
+          </form>
+          <br>
+            <form>
+            <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder= "*optional"  required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
-            <div class="col-md-4">
+            </form>
+            <br>
+            <form>
+            <div class="col-md-8">
                 <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -84,30 +90,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
+            <br>
+            <div class="col">
+                <label for="validationCustom03" class="form-label">Email</label>
                 <input type="text" class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
-                    Please provide a valid city.
+                    Please provide a valid email.
                 </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
+            <br>
+            <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Gender</label>
                 <select class="form-select" id="validationCustom04" required>
                     <option selected disabled value="">Choose...</option>
-                    <option>...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
                 </select>
                 <div class="invalid-feedback">
-                    Please select a valid state.
+                    Please select a choice.
                 </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
+            <br>
+            <div class="col-md-9">
+                <label for="validationCustom05" class="form-label">Password</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Must include 1 number and one Character" required>
                 <div class="invalid-feedback">
-                    Please provide a valid zip.
+                    Please provide a valid password.
                 </div>
             </div>
+            <br>
             <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -119,6 +131,7 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="col-12">
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
