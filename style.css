@@ -45,11 +45,18 @@ body{
     display:none;
 }
 .two{
-    padding-top: 1%;
     justify-content: center;
     align-items: center;
 
     
+}
+.navbar-light{
+    color: blueviolet;
+
+}
+.nav-item:hover{
+background-color: white;
+color: white;
 }
 .brand{
     margin-top: 0.5vw ;
@@ -117,16 +124,15 @@ margin-left: 2%;
 .card-img-top1{
     margin-top: 5%;
     border-radius:300px;
-    width: 70%;
-    
+    width: 58%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-0%);
 }
-
-.card-img-top2{
-    border-radius:300px;
+.card-img-top1:hover{
     width: 60%;
-
-    
 }
+
 
 .card-body{
 
@@ -180,7 +186,14 @@ border-radius:10px;
 }
 
 /* Sign up page*/
-
+.signuplink{
+    margin-right: 45px;
+    color: white;
+    text-decoration: none;
+}
+.signuplink:hover{
+    color: #4E0E78;
+}
 .signup{
     position: absolute;
     margin-left: 33%;
@@ -208,15 +221,17 @@ width: 40%;
 
 .form-control{
     background-color:  rgba(255, 255, 255, 0.45);
+    color: white;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:none;
 }
+
 .form-control:hover, .form-control:active,
 .form-control:focus {
     background-color:  #4E0E78;
-    
+    color: white;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

@@ -18,7 +18,7 @@
     <title>Astir Sign up</title>
 </head>
 
-<body>
+<body onload= "init()">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4">
           <nav class="navbar navbar-expand-lg navbar-light ">
@@ -61,7 +61,7 @@
         <form class="needs-validation" novalidate>
             <div class="col-md-8">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="*No other Characters"required>
+                <input type="text" class="form-control" id="firstName" placeholder="*No other Characters"required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -71,7 +71,7 @@
             <form>
             <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder= "*optional"  required>
+                <input type="text" class="form-control" id="lastName" placeholder= "*optional"  required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -83,7 +83,7 @@
                 <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
+                    <input type="text" class="form-control" id="username"
                         aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please choose a username.
@@ -93,7 +93,7 @@
             <br>
             <div class="col">
                 <label for="validationCustom03" class="form-label">Email</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
+                <input type="text" class="form-control" id="email" required>
                 <div class="invalid-feedback">
                     Please provide a valid email.
                 </div>
@@ -101,7 +101,7 @@
             <br>
             <div class="col-md-6">
                 <label for="validationCustom04" class="form-label">Gender</label>
-                <select class="form-select" id="validationCustom04" required>
+                <select class="form-select" id="gender" required>
                     <option selected disabled value="">Choose...</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -114,7 +114,7 @@
             <br>
             <div class="col-md-9">
                 <label for="validationCustom05" class="form-label">Password</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="Must include 1 number and one Character" required>
+                <input type="text" class="form-control" id="password" placeholder="Must include 1 number and one Character" required>
                 <div class="invalid-feedback">
                     Please provide a valid password.
                 </div>
@@ -122,7 +122,7 @@
             <br>
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
                     <label class="form-check-label" for="invalidCheck">
                         Agree to terms and conditions
                     </label>
@@ -133,7 +133,7 @@
             </div>
             <br>
             <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" onclick="onSavePressed()">Submit form</button>
             </div>
         </form>
 

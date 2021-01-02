@@ -2,7 +2,7 @@ let BreakfastSearch = document.querySelector("#v-pills-breakfast-tab")
 let LunchSearch = document.querySelector("#v-pills-lunch-tab")
 let DinnerSearch = document.querySelector("#v-pills-dinner-tab")
 let DessertsSearch = document.querySelector("#v-pills-desserts-tab")
-let OthersSearch = document.querySelector("#search")
+let OthersSearch = document.getElementById("#search")
 
 //Add an event listener that runs the function sendApiRequest when clicked.
 
@@ -1149,3 +1149,29 @@ function userAPIDataOthers(data){
  //localStorage Create button that allows users to save recipes to local storage and display information on a saved area
  //2 event listeners(one to save info to local storage)(one to retrieve data from local storage in form of html)
  //bookmarkIcon add event listener, when clicked fills up to white.
+
+//session storage for Sign in
+//local storage for user actions after sign in
+function init(){
+  if (localStorage.FirstName){
+    document.getElementById("firstName").value = localStorage.FirstName;
+    document.getElementById("lastName").value = localStorage.LastName;
+    document.getElementById("username").value = localStorage.Username;
+    document.getElementById("email").value = localStorage.Email;
+    document.getElementById("gender").value = localStorage.Gender;
+    document.getElementById("password").value = localStorage.Password;
+    document.getElementById("termsCheck").value = localStorage.TermsCheck;
+    
+  }
+}
+function onSavePressed() {
+  localStorage.FirstName = document.getElementById("firstName").value;
+  alert("Saved successfully");
+  localStorage.LastName = document.getElementById("lastName").value;
+  localStorage.Username = document.getElementById("username").value;
+  localStorage.Email = document.getElementById("email").value;
+  localStorage.Gender = document.getElementById("gender").value;
+  localStorage.Password = document.getElementById("password").value;
+  localStorage.TermsCheck = document.getElementById("termsCheck").value;  
+
+}
