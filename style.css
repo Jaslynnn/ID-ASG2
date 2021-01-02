@@ -94,6 +94,50 @@ color: white;
     background-color: blueviolet;
 }
 
+.card1{
+    margin-top: 3%;
+    display:flex;
+    border-radius:25px;
+    background-color: white;
+    color: white;
+    align-items: flex-end;
+    justify-content: end;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding: 1%;
+  
+}
+
+.card1:hover{
+    background-color: blueviolet;
+}
+
+.card-img-topR{
+    margin:3%;
+    border-radius:25px;
+    width:161%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.card-img-topR:hover{
+    transform: translateX(-50%);
+}
+.card-bodyR{
+    text-align: start;
+    padding:3%;
+margin-right: -5%;
+    background-color: blueviolet;
+    border-radius:25px;
+    transition: width 10s;
+transition-timing-function: ease-in-out;
+transform: translateX(-0%);
+}
 
 .col-sm-6{
     margin-left: 5rem;
