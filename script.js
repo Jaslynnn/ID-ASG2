@@ -1155,26 +1155,44 @@ function userAPIDataOthers(data) {
 function init() {
   if (localStorage.FirstName) {
     document.getElementById("firstName").value = localStorage.FirstName;
+  }
+  if (localStorage.LastName) {
     document.getElementById("lastName").value = localStorage.LastName;
+  }
+  if (localStorage.Username) {
     document.getElementById("username").value = localStorage.Username;
+  }
+  if (localStorage.Email) {
     document.getElementById("email").value = localStorage.Email;
+  }
+  if (localStorage.Gender) {
     document.getElementById("gender").value = localStorage.Gender;
+  }
+  if (localStorage.Password) {
     document.getElementById("password").value = localStorage.Password;
+  }
+  if (localStorage.TermsCheck) {
     document.getElementById("termsCheck").value = localStorage.TermsCheck;
+  }
+
+
+
+
+  function onSavePressed() {
+    localStorage.FirstName = document.getElementById("firstName").value;
+    alert("You have signed up successfully.");
+    localStorage.LastName = document.getElementById("lastName").value;
+    localStorage.Username = document.getElementById("username").value;
+    localStorage.Email = document.getElementById("email").value;
+    localStorage.Gender = document.getElementById("gender").value;
+    localStorage.Password = document.getElementById("password").value;
+    localStorage.TermsCheck = document.getElementById("termsCheck").value;
 
   }
-}
 
-function onSavePressed() {
-  localStorage.FirstName = document.getElementById("firstName").value;
-  alert("You have signed up successfuully.");
-  localStorage.LastName = document.getElementById("lastName").value;
-  localStorage.Username = document.getElementById("username").value;
-  localStorage.Email = document.getElementById("email").value;
-  localStorage.Gender = document.getElementById("gender").value;
-  localStorage.Password = document.getElementById("password").value;
-  localStorage.TermsCheck = document.getElementById("termsCheck").value;
+  //Add thee username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
+  let usernamep = localStorage.getItem("Username")
 
-}
-
-//Add thee username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
+  function displayProfile() {
+    document.querySelector("#pUsername").innerHTML = `@ ${usernamep} `
+  }

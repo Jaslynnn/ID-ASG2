@@ -196,7 +196,37 @@ transform: translateX(-0%);
 
 }
 
+.profilecard{
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-left: 15%;
+}
 
+.profilecardO{
+    padding: 3%;
+background-color: blueviolet;
+border-radius:25px;
+}
+.profilepic{
+    width: 80%;
+    border-radius: 100%;
+}
+.profileinner{
+    padding: 30%;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    margin-left: -60%;
+    margin-top: -5%;
+    width: 170%;
+    height: 95%;
+    background-color: white;
+    border-radius: 25px;
+
+}
+.above{
+    z-index: 1;
+}
 
 .btn {
 justify-content: center;
