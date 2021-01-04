@@ -207,6 +207,10 @@ transform: translateX(-0%);
     padding: 3%;
 background-color: blueviolet;
 border-radius:25px;
+border: 5px solid;
+border-color: white;
+color: white;
+
 }
 .profilepic{
     width: 80%;
@@ -222,6 +226,7 @@ border-radius:25px;
     height: 95%;
     background-color: white;
     border-radius: 25px;
+    color: black;
 
 }
 .above{

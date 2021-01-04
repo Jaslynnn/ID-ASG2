@@ -2,7 +2,7 @@ let BreakfastSearch = document.querySelector("#v-pills-breakfast-tab")
 let LunchSearch = document.querySelector("#v-pills-lunch-tab")
 let DinnerSearch = document.querySelector("#v-pills-dinner-tab")
 let DessertsSearch = document.querySelector("#v-pills-desserts-tab")
-let OthersSearch = document.getElementById("#search")
+let OthersSearch = document.querySelector("#search")
 
 //Add an event listener that runs the function sendApiRequest when clicked.
 
@@ -1175,6 +1175,7 @@ function init() {
     document.getElementById("termsCheck").value = localStorage.TermsCheck;
   }
 
+}
 
 
 
@@ -1190,9 +1191,14 @@ function init() {
 
   }
 
-  //Add thee username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
-  let usernamep = localStorage.getItem("Username")
+  //Add the username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
+ 
+ //Display the username enters in sign up in the profile page
+  var UsernameP = localStorage.getItem("Username")
+  var FirstnameP = localStorage.getItem("FirstName")
+
 
   function displayProfile() {
-    document.querySelector("#pUsername").innerHTML = `@ ${usernamep} `
+    document.querySelector("#pUsername").innerHTML = `@ ${UsernameP} `
+    document.querySelector("#firstName").innerHTML = `@ ${FirstnameP} `
   }
