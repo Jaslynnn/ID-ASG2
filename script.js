@@ -86,6 +86,7 @@ async function sendApiRequestOthers() {
 
 //function that does something with the data received from the API. Name customised to whatever you are doing with it
 function userAPIDataBreakfast(data) {
+  for (var i =0; i< data.hits[0].recipe.ingredientLines.length; i++) {
   document.querySelector("#v-pills-breakfast").innerHTML = `
     <div class="row">
     <div class="card mb-3" style="max-width: 540px;">
@@ -100,7 +101,7 @@ function userAPIDataBreakfast(data) {
         <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
         <li>Calories: ${data.hits[0].recipe.calories}</li>
         <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-        <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
+        <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines[i]}</p>
         <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
         <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
         </div>
@@ -294,7 +295,7 @@ function userAPIDataBreakfast(data) {
 
 </div>
 
-    `
+    `}
 
 
 }
