@@ -1194,11 +1194,12 @@ function init() {
   //Add the username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
  
  //Display the username enters in sign up in the profile page
-  var UsernameP = localStorage.getItem("Username")
-  var FirstnameP = localStorage.getItem("FirstName")
+
 
 
   function displayProfile() {
-    document.querySelector("#pUsername").innerHTML = `@ ${UsernameP} `
-    document.querySelector("#firstName").innerHTML = `@ ${FirstnameP} `
+    var UsernameP = localStorage.getItem("Username")
+    var FirstnameP = localStorage.getItem("FirstName")
+    document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
+    document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
   }
