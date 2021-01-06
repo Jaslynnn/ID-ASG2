@@ -96,7 +96,7 @@ function userAPIDataBreakfast(data) {
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">${data.hits[0].recipe.label}</h5>
+        <h5 class="card-title">${data.hits[0].recipe.label}</h5> 
         <p class="card-text">
         <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
         <li>Calories: ${data.hits[0].recipe.calories}</li>
@@ -1163,6 +1163,9 @@ function init() {
   if (localStorage.Username) {
     document.getElementById("username").value = localStorage.Username;
   }
+  if (localStorage.Bio) {
+    document.getElementById("bio").value = localStorage.Bio;
+  }
   if (localStorage.Email) {
     document.getElementById("email").value = localStorage.Email;
   }
@@ -1189,8 +1192,9 @@ function init() {
     localStorage.Gender = document.getElementById("gender").value;
     localStorage.Password = document.getElementById("password").value;
     localStorage.TermsCheck = document.getElementById("termsCheck").value;
-
+    localStorage.Bio = document.getElementById("bio").value
   }
+
 
   //Add the username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
  
@@ -1201,6 +1205,13 @@ function init() {
   function displayProfile() {
     var UsernameP = localStorage.getItem("Username")
     var FirstnameP = localStorage.getItem("FirstName")
+    var BioP = localStorage.getItem("bio")
     document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
     document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
+    document.querySelector("#bio").innerHTML = `${BioP} `
+
+  }
+
+  function saveRecipe() {
+    localStorage.Recipe= document.getElementById("").value;
   }

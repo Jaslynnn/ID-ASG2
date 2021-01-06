@@ -91,6 +91,16 @@
                 </div>
             </div>
             <br>
+            <form>
+              <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Bio</label>
+                  <input type="text" class="form-control" id="bio" placeholder= "*optional"  required>
+                  <div class="valid-feedback">
+                      Looks good!
+                  </div>
+              </div>
+              </form>
+            <br>
             <div class="col">
                 <label for="validationCustom03" class="form-label">Email</label>
                 <input type="text" class="form-control" id="email" required>
@@ -114,7 +124,7 @@
             <br>
             <div class="col-md-9">
                 <label for="validationCustom05" class="form-label">Password</label>
-                <input type="text" class="form-control" id="password" placeholder="Must include 1 number and one Character" required>
+                <input type="text" class="form-control" id="password" placeholder="eg.happyFluffyUnicorn" required>
                 <div class="invalid-feedback">
                     Please provide a valid password.
                 </div>
@@ -133,7 +143,7 @@
             </div>
             <br>
             <div class="col-12">
-                <button class="btn btn-primary" onclick="onSavePressed()">Submit form</button>
+                <a href ="MyProfile.html" class="btn btn-primary" onclick="onSavePressed()" >Submit form </a>
             </div>
         </form>
 

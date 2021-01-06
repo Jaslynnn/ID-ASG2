@@ -36,7 +36,7 @@
                     <a class="nav-link" class=brand href="Recipe.html">Recipes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Sign up.html">Sign in</a>
+                    <a class="nav-link" href="SignUp.html">Sign in</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My Profile</a>
@@ -67,23 +67,18 @@
             <br></br>
             <h2 id=firstName> Jasnyl </h2> <h2 id=lastName >Chen</h2>
    
-            <p>Loves Japanese food and sweet things, and chocolate</p>
+            <p id=bio>Loves Japanese food and sweet things, and chocolate</p>
             
             <button onclick= "alert('You have followed successfully') "class="btn btn-primary">Follow</button>
            </div>
           </div>
           <div class="col-md-6">
             <div class="card-bodyR">
-              <h5 class="card-title">Recipes</h5>
-              <p class="card-text">
-                Usage directions:
-                <br></br> 1. Browse through the collection by clicking onto the various tabs on the side by type of
-                meal
-                <br></br>2. If you want to find a recipe by a specific word or food, click onto the others tab and
-                type in the word. Proceed to press search and the food will appear.
-                <br></br>3.Click on to the "Go to source" button to find out recipe details. </p>
+              <h5 class="card-title">Most Recent Saved Post</h5>
+              <p class="card-text" id= "saved post">
+                </p>
               <p class="card-text">Ps. Hover over images for a small surprise.</small></p>
-              <button onclick=sendApiRequestBreakfast() class="btn btn-primary">Start looking at breakfast</button>
+              <a href="ProfileSettings.html" class="btn btn-primary">Settings</a>
             </div>
           </div>
         </div>

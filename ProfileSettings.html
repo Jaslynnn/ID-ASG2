@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Astir profile settings</title>
+    <title>Astir Sign up</title>
 </head>
 
 <body onload= "init()">
@@ -36,7 +36,7 @@
                     <a class="nav-link" class=brand href="Recipe.html">Recipes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Sign up.html">Sign in</a>
+                    <a class="nav-link" href="SignUp.html">Sign in</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My Profile</a>
@@ -80,55 +80,60 @@
             <br>
             <form>
             <div class="col-md-8">
-                <label for="validationCustomUsername" class="form-label">Bio</label>
+                <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="bio"
+                    <input type="text" class="form-control" id="username"
                         aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                        Please enter a bio.
+                        Please choose a username.
                     </div>
                 </div>
             </div>
             <br>
+            <form>
+              <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Bio</label>
+                  <input type="text" class="form-control" id="bio" placeholder= "*optional"  required>
+                  <div class="valid-feedback">
+                      Looks good!
+                  </div>
+              </div>
+              </form>
+            <br>
             <div class="col">
-                <label for="validationCustom03" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" required>
+                <label for="validationCustom03" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" required>
                 <div class="invalid-feedback">
-                    Please enter a valid username.
+                    Please provide a valid email.
                 </div>
             </div>
             <br>
             <div class="col-md-6">
-                <label for="validationCustom04" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" required>
+                <label for="validationCustom04" class="form-label">Gender</label>
+                <select class="form-select" id="gender" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
                 <div class="invalid-feedback">
-                    Please enter a valid email.
+                    Please select a choice.
                 </div>
             </div>
             <br>
             <div class="col-md-9">
-                <label for="validationCustom05" class="form-label">Password</label>
-                <input type="text" class="form-control" id="password" placeholder="Must include 1 number and one Character" required>
+                <label for="validationCustom05" class="form-label">Reset Password</label>
+                <input type="text" class="form-control" id="password" placeholder="eg.happyFluffyUnicorn" required>
                 <div class="invalid-feedback">
                     Please provide a valid password.
                 </div>
             </div>
             <br>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
-                    </div>
-                </div>
-            </div>
+       
             <br>
             <div class="col-12">
-                <button class="btn btn-primary" onclick="onSavePressed()">Submit form</button>
+                <button class="btn btn-primary" onclick="onSavePressed()">Save New Settings</button>
             </div>
         </form>
 
