@@ -321,6 +321,16 @@ function init() {
 
 }
 
+function logIn() {
+  if (document.getElementById("LogInEmail").value == localStorage.Email && document.getElementById("logInPassword").value == localStorage.Password ) {
+    document.querySelector("logIn").innerHTML = ` <a href= "MyProfile.html" class="btn btn-primary">Sign in</a> `
+  }
+  else{
+    alert("Please enter a valid email or password")
+  }
+
+    
+  }
 
 
 function onSavePressed() {
