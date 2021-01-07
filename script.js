@@ -91,8 +91,7 @@ function userAPIDataBreakfast(data) {
   let cards = "";
   
   for (var i = 0; i < data.hits.length; i++) {
-    
-    cards += document.querySelector("#v-pills-breakfast").innerHTML += ` 
+    document.querySelector("#v-pills-breakfast").innerHTML += ` 
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
@@ -105,16 +104,12 @@ function userAPIDataBreakfast(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li> Ingredients:`
-
-          let ingredients= "";
-          for(var i = 0; i < data.hits.recipe.ingredientLines.length; i++){
-            ingredients += document.querySelector("#v-pills-breakfast").innerHTML += ` <li>${data.hits[i].recipe.ingredientLines}<li>`
-            }
-            document.querySelector("#v-pills-breakfast").innerHTML += `
+          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
-          
+          </div>
+          </div>
+
           </div>
       </div>
 
@@ -345,213 +340,45 @@ function userAPIDataBreakfast(data) {
 }
 
 function userAPIDataLunch(data) {
-  document.querySelector("#v-pills-lunch").innerHTML = `
-  <div class="row">
-  <div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-  <div class="col-md-4">
-    <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
-  </div>
-  <div class="col-md-8">
-    <div class="card-body">
-      <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-      <p class="card-text">
-      <li>Diet-type:${data.hits[0].recipe.dietLabels}</li>
-      <li>Calories: ${data.hits[0].recipe.calories}</li>
-      <li>Health Labels: ${data.hits[0].recipe.healthLabels}</li>
-      <li>Ingredients needed: ${data.hits[0].recipe.ingredientLines}</p>
-      <p class="card-text">Sourced from: ${data.hits[0].recipe.source}</small></p>
-      <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Go to source</a>
+  
+ document.querySelector("#v-pills-lunch").innerHTML = `<div class="row"> `
+  let cards = "";
+  
+  for (var i = 0; i < data.hits.length; i++) {
+    document.querySelector("#v-pills-breakfast").innerHTML += ` 
+    <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
       </div>
-  </div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[1].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[1].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[1].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[1].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[1].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[1].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[1].recipe.source}</small></p>
-    <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Go to source</a>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">${data.hits[i].recipe.label}</h5> 
+          <p class="card-text">
+          <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
+          <li>Calories: ${data.hits[i].recipe.calories}</li>
+          <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
+          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
+          <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
+          </div>
+      </div>
     </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[2].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[2].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[2].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[2].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[2].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[2].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[2].recipe.source}</small></p>
-    <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Go to source</a>
     </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[3].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[3].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[3].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[3].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[3].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[3].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[3].recipe.source}</small></p>
-    <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Go to source</a>
+    
+    
+    
+    
     </div>
-</div>
-</div>
-</div>
+    
+        `
+      }
+    
+    
+    
+  
 
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[4].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[4].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[4].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[4].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[4].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[4].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[4].recipe.source}</small></p>
-    <a href="${data.hits[4].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[5].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[5].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[5].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[5].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[5].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[5].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[5].recipe.source}</small></p>
-    <a href="${data.hits[5].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[6].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[6].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[6].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[6].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[6].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[6].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[6].recipe.source}</small></p>
-    <a href="${data.hits[6].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[7].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[7].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[7].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[7].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[7].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[7].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[7].recipe.source}</small></p>
-    <a href="${data.hits[7].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[8].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[8].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[8].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[8].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[8].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[8].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[8].recipe.source}</small></p>
-    <a href="${data.hits[8].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row g-0">
-<div class="col-md-4">
-  <img src="${data.hits[9].recipe.image}" class="card-img-top" alt="...">
-</div>
-<div class="col-md-8">
-  <div class="card-body">
-    <h5 class="card-title">${data.hits[9].recipe.label}</h5>
-    <p class="card-text">
-    <li>Diet-type:${data.hits[9].recipe.dietLabels}</li>
-    <li>Calories: ${data.hits[9].recipe.calories}</li>
-    <li>Health Labels: ${data.hits[9].recipe.healthLabels}</li>
-    <li>Ingredients needed: ${data.hits[9].recipe.ingredientLines}</p>
-    <p class="card-text">Sourced from: ${data.hits[9].recipe.source}</small></p>
-    <a href="${data.hits[9].recipe.url}" class="btn btn-primary">Go to source</a>
-    </div>
-</div>
-</div>
-</div>
-
-
-
-
-</div>
-  `
+   document.querySelector("#v-pills-breakfast").innerHTML += `</div> `
 }
 
 function userAPIDataDinner(data) {
@@ -1257,5 +1084,5 @@ function displayProfile() {
 }
 
 function saveRecipe() {
-  localStorage.Recipe = document.getElementById("").value;
+  localStorage.image = document.getElementById("").value;
 }
