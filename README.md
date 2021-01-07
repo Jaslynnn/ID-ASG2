@@ -9,14 +9,19 @@ Github link:
 https://jaslynnn.github.io/ID-ASG2/
 # Your Project's Name
 Astir, a recipe sourcing website
+- My project provides a smooth user experience in which 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
 Essentially, this part is your sales pitch.
  
 ## Design Process
- 
+This website is for people who do not know what to eat for breakfast lunch and dinner and do not knwo where and how to source for recipes. we hope that the recipes in these websites will be able to give them suggestions on what to eat abnd thus feel motivated to cook as they have options
+I wanted to create a  
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
+As a user, I would like to get recipes of food so that I can cook at home.
+
+As a user, I would like to have a pleasant user experience while going through the webpage 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 - As a user type, I want to perform an action, so that I can achieve a goal.
 
