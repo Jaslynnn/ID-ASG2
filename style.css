@@ -84,7 +84,7 @@ color: white;
     color: white;
     border: 2px solid;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    flex-direction: column;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
 
@@ -180,7 +180,24 @@ margin-left: 2%;
 .card-text{
     padding: 2%;
 }
+.card-bodyFirst{
+    display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: bottom;
+text-align: center;
+background-color: blueviolet;
+border-radius:25px;
+padding: 10%;
+padding-bottom: 5%;
+margin-top: 2%;
+margin-bottom: 3%;
 
+
+transition: width 10s;
+transition-timing-function: ease-in-out;
+transform: translateX(-0%);
+}
 .card-body{
 
 display:flex;
@@ -241,8 +258,17 @@ justify-content: center;
 align-items: right;
 color:  blueviolet;
 background-color: white;
-border-radius:10px;
+border-radius:100px;
+border: none;
 
+
+}
+
+.btn:hover{ 
+    background-color:  rgba(255, 255, 255, 0.40);
+    border-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 
 }
 
@@ -258,10 +284,14 @@ border-radius:10px;
 .v-pills-tab{
     background-color: blueviolet;
 }
-
-.nav-link:hover {
-    background-color: blueviolet;
-    color: white;
+.nav-link{
+    background-color:  rgba(255, 255, 255, 0.45);
+    color: white  ;
+    border: 1px ;
+}
+.nav-link:hover{
+    background-color:  rgba(255, 255, 255, 0.45);
+    color: rgb(29, 26, 26);
 }
 .text-muted{
     color: white;
@@ -320,5 +350,6 @@ width: 40%;
 
   
 .backgroundCredit{
-color: none;
+    text-decoration: none;
+    display: hidden;
 }
