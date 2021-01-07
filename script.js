@@ -86,6 +86,30 @@ async function sendApiRequestOthers() {
 
 //function that does something with the data received from the API. Name customised to whatever you are doing with it
 function userAPIDataBreakfast(data) {
+  let cards= "";
+  for (var i = 0; i < data.hits.length; i++){
+    cards += <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">${data.hits[i].recipe.label}</h5> 
+          <p class="card-text">
+          <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
+          <li>Calories: ${data.hits[i].recipe.calories}</li>
+          <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
+          <li>Ingredients needed: ${data.hits[i].recipe.ingredientLines[i]}</p>
+          <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
+          <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+    
+  }
   for (var i = 0; i < data.hits.length; i++) {
     document.querySelector("#v-pills-breakfast").innerHTML = `
     <div class="card mb-3" style="max-width: 540px;">

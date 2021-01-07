@@ -5,6 +5,8 @@ Credits:
 https://dribbble.com/shots/8109236-Space-Whale
 https://getbootstrap.com/
 
+Github link:
+https://jaslynnn.github.io/ID-ASG2/
 # Your Project's Name
 Astir, a recipe sourcing website
 One or two paragraphs providing an overview of your project. Tell us about your project.
