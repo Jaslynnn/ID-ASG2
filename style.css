@@ -289,10 +289,27 @@ border: none;
     color: white  ;
     border: 1px ;
 }
+
 .nav-link:hover{
     background-color:  rgba(255, 255, 255, 0.45);
     color: rgb(29, 26, 26);
 }
+
+.nav-link1{
+    color: white  ;
+    text-align: center;
+    padding: 10%;
+    margin-left: 2%;
+    text-decoration: none;
+} 
+
+.nav-link1:hover{
+    background-color:  rgba(255, 255, 255, 0.45);
+    color:white;
+    border-radius: 100px;
+}
+
+
 .text-muted{
     color: white;
 }
