@@ -417,7 +417,7 @@ width: 40%;
 
 .invert {
 filter: invert(1) hue-rotate(180deg);
-transition: 0.3s;
+transition: 0.3s linear;
 
 }
 .backgroundCredit{
