@@ -97,7 +97,7 @@ function userAPIDataBreakfast(data) {
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top inverted" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -140,7 +140,7 @@ function userAPIDataLunch(data) {
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top inverted" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -181,7 +181,7 @@ function userAPIDataDinner(data) {
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top inverted" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -219,7 +219,7 @@ function userAPIDataDesserts(data) {
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top inverted" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -256,7 +256,7 @@ function userAPIDataOthers(data) {
     <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${data.hits[i].recipe.image}" class="card-img-top" alt="...">
+        <img src="${data.hits[i].recipe.image}" class="card-img-top inverted" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
