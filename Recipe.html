@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/76f2d1ef46.js" crossorigin="anonymous"></script>
   <title>Astir Recipe</title>
 </head>
 
@@ -49,7 +50,16 @@
   </div>
   <nav class="navbar navbar-dark bg-blue">
     <div class="container-fluid">
-      <h1 class=brand>Astir</h1>
+      <h1 class=brand>Astir
+        <div>
+          <input type = "checkbox"
+          class="checkbox inverted" id= "checkbox" onclick="darkMode()">
+          <label for = "checkbox" class="label1 inverted">
+            <i class="far fa-moon "></i>
+            <i class ="fas fa-sun "></i>
+            <div class="ball"></div>
+          </label>
+      </h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
         aria-label="Toggle navigation">

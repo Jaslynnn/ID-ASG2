@@ -15,14 +15,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  
-  <title>Astir</title>
+  <script src="https://kit.fontawesome.com/76f2d1ef46.js" crossorigin="anonymous"></script>
+  <title>Astir</title> 
 </head>
 
 <body>
   <div class="outer-wrapper">
-    <div class="wrapper">
-      <div class="slide one">
+    <div class="wrapper" id=wrapping>
+      <div class="slide one" id = "one">
 
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="p-4">
@@ -54,7 +54,21 @@
         </div>
         <nav class="navbar navbar-dark">
           <div class="container-fluid">
-            <h1 class=brand >Astir</h1>
+            <h1 class=brand >Astir
+              <div>
+                <input type = "checkbox"
+                class="checkbox inverted" id= "checkbox" onclick="darkMode()">
+                <label for = "checkbox" class="label1 inverted">
+                  <i class="far fa-moon "></i>
+                  <i class ="fas fa-sun "></i>
+                  <div class="ball"></div>
+                </label>
+        
+              </div>
+              </h1> 
+
+ 
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,8 +79,8 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="card">
-              <img src="Images/Astir logo Ai file-01-01-01.png" class="card-img-top1" alt="Isometric sandwich">
-              <div class="card-bodyFirst">
+              <img src="Images/Astir logo Ai file-01-01-01.png" class="card-img-top1 inverted" alt="Isometric sandwich">
+              <div class="card-bodyFirst ">
                 <h5 class="card-title">Your health improves now</h5>
                 <p class="card-text">You can make a difference today</p>
                 <a href="#about" class="btn btn-primary">Start</a>
@@ -185,7 +199,7 @@
 
           <div class="col-sm-6">
             <div class="card">
-              <img src="Images/Astir logo Ai file-01-01-01.png" class="card-img-top1" alt="magic healing potion">
+              <img src="Images/Astir logo Ai file-01-01-01.png" class="card-img-top1 inverted" alt="magic healing potion">
               <div class="card-body">
                 <h5 class="card-title">Recipes</h5>
                 <p class="card-text">Click me to find some recipes
@@ -250,7 +264,7 @@
           </div>
           <div class="col-sm-6" id= review1>
             <div class="card">
-              <img src="Images/jk food.jpg" class="card-img-top1" alt="magic healing potion">
+              <img src="Images/jk food.jpg" class="card-img-top1 inverted" alt="magic healing potion">
               <div class="card-body">
                 <h5 class="card-title">5 Star review by JKaede</h5>
                 <p class="card-text"> For the majority of 2020, Astir has helped me source for the recipes 
@@ -304,7 +318,7 @@
           <div class="row">
             <div class="col-sm-6" id= review2>
               <div class="card">
-                <img src="Images/jdw food.jpg" class="card-img-top1" alt="magic healing potion">
+                <img src="Images/jdw food.jpg" class="card-img-top1 inverted" alt="magic healing potion">
                 <div class="card-body">
                   <h5 class="card-title">5 star review by jedewi9303</h5>
                   <p class="card-text">For the majority of 2020, Astir has helped me source for the recipes 
@@ -319,7 +333,9 @@
                 <div class="card-body">
                   <h5 class="card-title">The End</h5>
                   <p class="card-text"> Thank you for reading through our reviews. More reviews coming up soon. </p>
-                  
+            
+                <a class= backgroundCredit href= "https://pikbest.com/free-backgrounds/banner.html">Free banner backgrounds from pikbest.com</a>
+              </div>
                 </div>
               </div>
             </div>
@@ -327,9 +343,6 @@
       </div>
     </div>
 
-  </div class= backgroundCredit>
-  <a href= "https://pikbest.com/free-backgrounds/banner.html">Free banner backgrounds from pikbest.com</a>
-</div>
 
 
 

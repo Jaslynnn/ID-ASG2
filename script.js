@@ -377,3 +377,18 @@ function displayProfile() {
 function saveRecipe() {
   localStorage.image = document.getElementById("").value;
 }
+
+
+
+  function darkMode(){
+    $(".wrapper").css("background-image","none" )
+    document.body.classList.toggle("dark-mode");
+    document.querySelectorAll(".inverted"). forEach((result) => {
+      result.classList.toggle("invert")
+    })
+  }
+
+
+
+
+
