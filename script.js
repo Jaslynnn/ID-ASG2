@@ -321,6 +321,34 @@ function init() {
 
 }
 
+function init2() {
+  if (localStorage.Firstname) {
+    document.getElementById("firstNameP").value = localStorage.FirstName;
+  }
+  if (localStorage.LastName) {
+    document.getElementById("lastNameP").value = localStorage.LastName;
+  }
+  if (localStorage.Username) {
+    document.getElementById("usernameP").value = localStorage.Username;
+  }
+  if (localStorage.Bio) {
+    document.getElementById("bioP").value = localStorage.Bio;
+  }
+  if (localStorage.Email) {
+    document.getElementById("emailP").value = localStorage.Email;
+  }
+  if (localStorage.Gender) {
+    document.getElementById("genderP").value = localStorage.Gender;
+  }
+  if (localStorage.Password) {
+    document.getElementById("passwordP").value = localStorage.Password;
+  }
+  if (localStorage.TermsCheck) {
+    document.getElementById("termsCheckP").value = localStorage.TermsCheck;
+  }
+
+}
+
 function logIn() {
   if (document.getElementById("LogInEmail").value == localStorage.Email && document.getElementById("logInPassword").value == localStorage.Password ) {
     document.querySelector("logIn").innerHTML = ` <a href= "MyProfile.html" class="btn btn-primary">Sign in</a> `
@@ -338,25 +366,7 @@ function onSavePressed() {
   localStorage.FirstName = document.getElementById("firstName").value;
   localStorage.LastName = document.getElementById("lastName").value;
   localStorage.Username = document.getElementById("username").value;
-  
-  document.querySelector("profilePicture").addEventListener("change",function()
-  { const reader = new FileReader();
-
-    reader.addEventListener("load", () => {
-      console.log(reader.result);
-      localStorage.setItem("ProfilePicture", reader.result);
-    });
-    
-    reader.readAsDataURL(this.files[0]);
-  
-  });
-
-  const pfpImageDataUrl= localStorage.getItem("ProfilePicture");
-  if(pfpImageDataUrl) {
-    document.querySelector("#pfpPreview").setAttribute("src", pfpImageDataUrl);
-  };
-
-  localStorage.ProfilePicture = document.getElementById("profilePicture").value;
+ 
   localStorage.Email = document.getElementById("email").value;
   localStorage.Gender = document.getElementById("gender").value;
   localStorage.Password = document.getElementById("password").value;
@@ -364,6 +374,20 @@ function onSavePressed() {
   localStorage.Bio = document.getElementById("bio").value
 
 }
+
+function onSavePressed2() {
+  alert("Your settings are saved.");
+  localStorage.FirstName = document.getElementById("firstNameP").value;
+  localStorage.LastName = document.getElementById("lastNameP").value;
+  localStorage.Username = document.getElementById("usernameP").value;
+  localStorage.Email = document.getElementById("emailP").value;
+  localStorage.Gender = document.getElementById("genderP").value;
+  localStorage.Password = document.getElementById("passwordP").value;
+  localStorage.TermsCheck = document.getElementById("termsCheckP").value;
+  localStorage.Bio = document.getElementById("bioP").value
+
+}
+
 
 
 //Add the username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
@@ -379,8 +403,8 @@ function displayProfile() {
 
   document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
   document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
-  document.querySelector("#bio").innerHTML = `${BioP} `
-  document.querySelector("#profile-picture").innerHTML = `${pfp} `
+  document.querySelector("#bio").innerHTML = `P.s: <br> ${BioP} `
+
 
 }
 

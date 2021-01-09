@@ -919,4 +919,15 @@ body{
 .signup:hover{
     width: 90%;
 }
+
+.col-md-3{
+  width: 90%;
+  margin-left: 35% ;
+  justify-content: center;
+
+}
+.card-bodyR{
+ width: max-content;
+ margin-bottom: 5%;
+}
 }

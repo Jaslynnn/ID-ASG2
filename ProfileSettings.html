@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/76f2d1ef46.js" crossorigin="anonymous"></script><title>Astir Sign up</title>
 </head>
 
-<body onload= "init()">
+<body onload= "init2()">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4">
           <nav class="navbar navbar-expand-lg navbar-light ">
@@ -70,7 +70,7 @@
         <form class="needs-validation" novalidate>
             <div class="col-md-8">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="*No other Characters"required>
+                <input type="text" class="form-control" id="firstNameP" placeholder="*No other Characters"required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -80,7 +80,7 @@
             <form>
             <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder= "*optional"  required>
+                <input type="text" class="form-control" id="lastNameP" placeholder= "*optional"  required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -92,7 +92,7 @@
                 <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="username"
+                    <input type="text" class="form-control" id="usernameP"
                         aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please choose a username.
@@ -103,7 +103,7 @@
             <form>
               <div class="col-md-6">
                   <label for="validationCustom02" class="form-label">Bio</label>
-                  <input type="text" class="form-control" id="bio" placeholder= "*optional"  required>
+                  <input type="text" class="form-control" id="bioP" placeholder= "*optional"  required>
                   <div class="valid-feedback">
                       Looks good!
                   </div>
@@ -112,7 +112,7 @@
             <br>
             <div class="col">
                 <label for="validationCustom03" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" required>
+                <input type="text" class="form-control" id="emailP" required>
                 <div class="invalid-feedback">
                     Please provide a valid email.
                 </div>
@@ -120,7 +120,7 @@
             <br>
             <div class="col-md-6">
                 <label for="validationCustom04" class="form-label">Gender</label>
-                <select class="form-select" id="gender" required>
+                <select class="form-select" id="genderP" required>
                     <option selected disabled value="">Choose...</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -133,7 +133,7 @@
             <br>
             <div class="col-md-9">
                 <label for="validationCustom05" class="form-label">Reset Password</label>
-                <input type="text" class="form-control" id="password" placeholder="eg.happyFluffyUnicorn" required>
+                <input type="text" class="form-control" id="passwordP" placeholder="eg.happyFluffyUnicorn" required>
                 <div class="invalid-feedback">
                     Please provide a valid password.
                 </div>
