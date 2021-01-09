@@ -2,26 +2,35 @@
 Assignment 2
 So I wanted to do something that I had never done before. Thus I created a horizontal scroll page. I also wanted the design of this website to be very clean and spotless yet modern.
 Credits:
-https://dribbble.com/shots/8109236-Space-Whale
 https://getbootstrap.com/
 
 Github link:
 https://jaslynnn.github.io/ID-ASG2/
-# Your Project's Name
+
+#Astir
 Astir, a recipe sourcing website
-- My project provides a smooth user experience in which 
+- Showcases a recipe sourcing API that allows users to search for over 2 million recipes
+- Allows users to create an account 
+- Allows them to save notes in their notes section.
+- Dark mode so that the user will be able to read in comfort
+- 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
 Essentially, this part is your sales pitch.
  
 ## Design Process
-This website is for people who do not know what to eat for breakfast lunch and dinner and do not knwo where and how to source for recipes. we hope that the recipes in these websites will be able to give them suggestions on what to eat abnd thus feel motivated to cook as they have options
-I wanted to create a  
+- Created for people who are uncertain of what to eat for breakfast lunch and dinner and do not know where and how to source for recipes.
+- This is for people who want to become healthier by cooking at home
+- Has a fun design so that people will look forward to using the website and thus feel motivated to cook at home.
+- Allows users to keep a notes section so that the data will be saved the next time they return to the page.
+
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 As a user, I would like to get recipes of food so that I can cook at home.
 
 As a user, I would like to have a pleasant user experience while going through the webpage 
+
+
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 - As a user type, I want to perform an action, so that I can achieve a goal.
 
@@ -30,17 +39,29 @@ These files should themselves either be included as a pdf file in the project it
 Include the Adobe XD wireframe as a folder. You can include the XD share url. 
 
 ## Features
-
+- Horizontal Scroll - Allows users to navigate the home page horizontally by scrolling with their mouse.
+- Dark-mode toggle - Allows users to toggle the color scheme of the whole webpage darker with a sun and moon icon.
+- Anchors - Allows the user to navigate easily to the next item just with the click of a button.
+- Collapsable navigation bar - More negative space so that the interface looks cleaner.
+- Responsive images - Images zoom in or slide to the left when hovered over to create fluid user-experience.
+- Side tab bar - Easy navigation and classification of items
+- Recipe keyword Search bar - Easy for users to search for recipes by specific words
+- Storage of users data - Makes use of local storage to store user information
+- Auto display past data that has been entered before - Makes it more convenient for users when they want to log in
+- Personalised profile card based on Sign in information - displays details entered by the user for a more personalised feel.
+- Profile settings - allows users to change past information entered into the system and update their data.
+- Notes section -Allows users to record notes on the recipes that they like after they press the save button, information entered will be saved and continue to be displayed there when they re-enter the website so that it will be convenient
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- 
+- 
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+- Recipes to be saved with the click of a button
+- A saved recipes tab
 
 ## Technologies Used
 
