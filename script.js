@@ -319,6 +319,7 @@ function init() {
     document.getElementById("termsCheck").value = localStorage.TermsCheck;
   }
 
+
 }
 
 function logIn() {
@@ -328,16 +329,35 @@ function logIn() {
   else{
     alert("Please enter a valid email or password")
   }
-
+}
     
-  }
+  
 
+  document.querySelector("#profilePicture").addEventListener("change",function()
+  { const reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+      console.log(reader.result);
+      localStorage.setItem("ProfilePicture", reader.result);
+    });
+    
+    reader.readAsDataURL(this.files[0]);
+  
+  });
 
 function onSavePressed() {
   alert("You have signed up successfully.");
   localStorage.FirstName = document.getElementById("firstName").value;
   localStorage.LastName = document.getElementById("lastName").value;
   localStorage.Username = document.getElementById("username").value;
+  
+
+
+  const pfpImageDataUrl= localStorage.getItem("ProfilePicture");
+  if(pfpImageDataUrl) {
+    document.querySelector("#pfpPreview").setAttribute("src", pfpImageDataUrl);
+  };
+
   localStorage.ProfilePicture = document.getElementById("profilePicture").value;
   localStorage.Email = document.getElementById("email").value;
   localStorage.Gender = document.getElementById("gender").value;
@@ -358,11 +378,11 @@ function displayProfile() {
   var UsernameP = localStorage.getItem("Username")
   var FirstnameP = localStorage.getItem("FirstName")
   var BioP = localStorage.getItem("Bio")
-  var ProfilePicture = localStorage.getItem("ProfilePicture")
+  const pfpImageDataUrl= localStorage.getItem("ProfilePicture");
   document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
   document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
   document.querySelector("#bio").innerHTML = `${BioP} `
-  document.querySelector("#profile-picture").innerHTML = `${ProfilePicture} `
+  document.querySelector("#profile-picture").innerHTML = `${pfpImageDataUrl} `
 
 }
 
