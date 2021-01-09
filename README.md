@@ -61,14 +61,19 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 - Recipes to be saved with the click of a button
-- A saved recipes tab
+- A saved recipes tab that displays all the recipes
+- Gamefication system that awards the user badges when they save a certain number of badges.
 
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
+- [Bootstrap](https://getbootstrap.com/)
+    - The project uses **Bootstrap** to create responsive elements.
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+- [Fontawesome](https://fontawesome.com/)
+    - The project uses the sun and moon icons from **Fontawesome** for the dark mode toggle.
+
 
 
 ## Testing
@@ -89,6 +94,24 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Credits
 
+- Dark-mode-code 
+  - https://dev.to/ekaterina_vu/dark-mode-with-one-line-of-code-4lkm)
+  - https://youtu.be/qimopjP6YoM
+  - The dark mode in this project was inspired by https://dev.to/ekaterina_vu/dark-mode-with-one-line-of-code-4lkm  and reference by the second video for the dark mode features.
+  
+- Toggle 
+  - https://youtu.be/xodD0nw2veQ
+  - This was the video that I referenced to create the sun and moon toggle.
+  
+- API 
+  - https://youtu.be/zayeU5AOsHI 
+  - https://youtu.be/0V87k44yI3o
+  - These were the 2 videos that I referenced to link the api.
+  
+- Horizontal scroll
+  - https://youtu.be/OeaHnxahf40
+  - This was the video I referenced to do the horizontal scrolling bar
+  
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
