@@ -319,7 +319,6 @@ function init() {
     document.getElementById("termsCheck").value = localStorage.TermsCheck;
   }
 
-
 }
 
 function logIn() {
@@ -329,11 +328,18 @@ function logIn() {
   else{
     alert("Please enter a valid email or password")
   }
-}
-    
-  
 
-  document.querySelector("#profilePicture").addEventListener("change",function()
+    
+  }
+
+
+function onSavePressed() {
+  alert("You have signed up successfully.");
+  localStorage.FirstName = document.getElementById("firstName").value;
+  localStorage.LastName = document.getElementById("lastName").value;
+  localStorage.Username = document.getElementById("username").value;
+  
+  document.querySelector("profilePicture").addEventListener("change",function()
   { const reader = new FileReader();
 
     reader.addEventListener("load", () => {
@@ -344,14 +350,6 @@ function logIn() {
     reader.readAsDataURL(this.files[0]);
   
   });
-
-function onSavePressed() {
-  alert("You have signed up successfully.");
-  localStorage.FirstName = document.getElementById("firstName").value;
-  localStorage.LastName = document.getElementById("lastName").value;
-  localStorage.Username = document.getElementById("username").value;
-  
-
 
   const pfpImageDataUrl= localStorage.getItem("ProfilePicture");
   if(pfpImageDataUrl) {
@@ -378,11 +376,11 @@ function displayProfile() {
   var UsernameP = localStorage.getItem("Username")
   var FirstnameP = localStorage.getItem("FirstName")
   var BioP = localStorage.getItem("Bio")
-  const pfpImageDataUrl= localStorage.getItem("ProfilePicture");
+
   document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
   document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
   document.querySelector("#bio").innerHTML = `${BioP} `
-  document.querySelector("#profile-picture").innerHTML = `${pfpImageDataUrl} `
+  document.querySelector("#profile-picture").innerHTML = `${pfp} `
 
 }
 
