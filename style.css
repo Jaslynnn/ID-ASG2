@@ -397,6 +397,7 @@ body{
 .slide{
     width:100vw;
     height:100vh;
+    justify-content: space-evenly;
 }
 
 .wrapper{
@@ -404,7 +405,6 @@ body{
     flex-direction: row;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background-image: url("Images/cool\ liquid\ background\ 1.png");
     background-repeat: no-repeat;
     background-size: contain;
     width:400vw;
@@ -430,8 +430,12 @@ body{
 ::-webkit-scrollbar{
     display:none;
 }
+.one{
+    justify-content: space-between;
+    
+}
 .two{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     
@@ -811,6 +815,8 @@ transition: 0.3s linear;
 
 body{
     background-image: none;
+    background-color:blueviolet;
+
 }
 .brand{
     color: #fff;
@@ -819,7 +825,7 @@ body{
     display: flex;
     flex-direction: column;
     transform-origin: top left;
-    background-color: blueviolet;
+  
     background-repeat: no-repeat;
     background-size: contain;
     width:100vw;
@@ -854,9 +860,39 @@ body{
 
 .col-sm-6{
     margin-left: -10%;
+    justify-content: center;
     
 }
 
+.card{
+    justify-content: center;
+  
+    margin-right: 5%;
+  
+}
+.card-img-top{
+    width: 95%;
+}
 
+.card-img-topR{
+    width: 95%;
+}
 
+.card-bodyR{
+    margin-top: -15%;
+    padding-bottom: 50%;
+}
+
+#ingredients{
+    display: none;
+}
+
+.signup{
+    margin-left: 5%;
+    width: 60%;
+    padding-bottom: 40%;
+}
+.signup:hover{
+    width: 90%;
+}
 }

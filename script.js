@@ -106,7 +106,7 @@ function userAPIDataBreakfast(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <li id= "ingredients">Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
           </div>
@@ -149,7 +149,7 @@ function userAPIDataLunch(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <li id= "ingredients">Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
           </div>
@@ -190,7 +190,7 @@ function userAPIDataDinner(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <li id= "ingredients" >Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
           </div>
@@ -228,7 +228,7 @@ function userAPIDataDesserts(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <li id= "ingredients">Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
           </div>
@@ -265,7 +265,7 @@ function userAPIDataOthers(data) {
           <li>Diet-type:${data.hits[i].recipe.dietLabels}</li>
           <li>Calories: ${data.hits[i].recipe.calories}</li>
           <li>Health Labels: ${data.hits[i].recipe.healthLabels}</li>
-          <li>Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
+          <li id= "ingredients">Ingredients needed:${data.hits[i].recipe.ingredientLines}</li>
           <p class="card-text">Sourced from: ${data.hits[i].recipe.source}</small></p>
           <a href="${data.hits[i].recipe.url}" class="btn btn-primary">Go to source</a>
           </div>
@@ -381,7 +381,6 @@ function saveRecipe() {
 
 
   function darkMode(){
-    $(".wrapper").css("background-image","none" )
     document.body.classList.toggle("dark-mode");
     document.querySelectorAll(".inverted"). forEach((result) => {
       result.classList.toggle("invert")
