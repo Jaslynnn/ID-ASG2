@@ -374,10 +374,16 @@ function displayProfile() {
 
 }
 
-function saveRecipe() {
-  localStorage.image = document.getElementById("").value;
+function saveRecipes() {
+  localStorage.MyRecipes = document.getElementById("MyRecipes").value;
 }
 
+function savedRecipes() {
+  if (localStorage.MyRecipes) {
+    document.getElementById("MyRecipes").value = localStorage.MyRecipes;
+  }
+
+}
 
 
   function darkMode(){

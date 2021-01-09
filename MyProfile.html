@@ -19,7 +19,7 @@
     <title>Astir My Profile</title>
 </head>
 
-<body onload= "displayProfile()">
+<body onload= "displayProfile() , savedRecipes()">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4">
           <nav class="navbar navbar-expand-lg navbar-light ">
@@ -71,23 +71,29 @@
 
           <div class="col-md-3">
             <div class="profileinner above">
-              <div id=pUsername >@</div>
-            <img src="Images/gudetama sailor moon.jpg" class="profilepic" alt="Isometric sandwich">
+              <p id=pUsername >@</p>
+            <img src="Images/gudetama sailor moon.jpg" class="profilepic inverted" alt="Isometric sandwich">
             <br></br>
             <h2 id=firstName> Jasnyl </h2> <h2 id=lastName >Chen</h2>
    
             <p id=bio>Loves Japanese food and sweet things, and chocolate</p>
             
-            <button onclick= "alert('You have followed successfully') "class="btn btn-primary">Follow</button>
+            <a href="ProfileSettings.html" class="btn1">Settings</a>
            </div>
           </div>
           <div class="col-md-6">
             <div class="card-bodyR">
-              <h5 class="card-title">Most Recent Saved Post</h5>
-              <p class="card-text" id= "savedPost">
-                </p>
-              <p class="card-text">Ps. Hover over images for a small surprise.</small></p>
-              <a href="ProfileSettings.html" class="btn btn-primary">Settings</a>
+              <h5 class="card-title">My Recipes </h5>
+              <form></form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">notes </label>
+                <textarea class="form-control" id="MyRecipes" rows="3"></textarea>
+              </div>
+            </form>
+
+              <p class="card-text"> </small></p>
+              <a href="" onclick="saveRecipes()" class="btn btn-primary">save</a>
+              
             </div>
           </div>
         </div>
