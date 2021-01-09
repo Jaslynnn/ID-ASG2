@@ -53,11 +53,6 @@ Include the Adobe XD wireframe as a folder. You can include the XD share url.
 - Notes section -Allows users to record notes on the recipes that they like after they press the save button, information entered will be saved and continue to be displayed there when they re-enter the website so that it will be convenient
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
-### Existing Features
-- 
-- 
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 - Recipes to be saved with the click of a button
@@ -113,7 +108,6 @@ If this section grows too long, you may want to split it off into a separate fil
   - This was the video I referenced to do the horizontal scrolling bar
   
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
 - The photos used in this site were obtained from ...
