@@ -338,23 +338,13 @@ function onSavePressed() {
   localStorage.FirstName = document.getElementById("firstName").value;
   localStorage.LastName = document.getElementById("lastName").value;
   localStorage.Username = document.getElementById("username").value;
+  localStorage.ProfilePicture = document.getElementById("profilePicture").value;
   localStorage.Email = document.getElementById("email").value;
   localStorage.Gender = document.getElementById("gender").value;
   localStorage.Password = document.getElementById("password").value;
   localStorage.TermsCheck = document.getElementById("termsCheck").value;
   localStorage.Bio = document.getElementById("bio").value
 
-}
-function onSavePressed2() {
-  alert("Your changes have been saved.");
-  localStorage.FirstName = document.getElementById("firstName").value;
-  localStorage.LastName = document.getElementById("lastName").value;
-  localStorage.Username = document.getElementById("username").value;
-  localStorage.Email = document.getElementById("email").value;
-  localStorage.Gender = document.getElementById("gender").value;
-  localStorage.Password = document.getElementById("password").value;
-  localStorage.TermsCheck = document.getElementById("termsCheck").value;
-  localStorage.Bio = document.getElementById("bio").value
 }
 
 
@@ -368,9 +358,11 @@ function displayProfile() {
   var UsernameP = localStorage.getItem("Username")
   var FirstnameP = localStorage.getItem("FirstName")
   var BioP = localStorage.getItem("Bio")
+  var ProfilePicture = localStorage.getItem("ProfilePicture")
   document.querySelector("#pUsername").innerHTML = `@${UsernameP} `
   document.querySelector("#firstName").innerHTML = `@${FirstnameP} `
   document.querySelector("#bio").innerHTML = `${BioP} `
+  document.querySelector("#profile-picture").innerHTML = `${ProfilePicture} `
 
 }
 
