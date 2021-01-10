@@ -899,12 +899,24 @@ body{
 }
 
 .card-img-topR{
-    width: 95%;
+    width: 25%;
+}
+
+.card1{
+  justify-content: center;
+  margin-right: 5%;
+  width: 100%;
+
+ 
 }
 
 .card-bodyR{
-    margin-top: -15%;
-    padding-bottom: 50%;
+  font-size: 4vw;
+  justify-content: center;
+  width: auto;
+  height: px;
+
+
 }
 
 #ingredients{
