@@ -1,9 +1,5 @@
 # ID-ASG2
 Assignment 2
-So I wanted to do something that I had never done before. Thus I created a horizontal scroll page. I also wanted the design of this website to be very clean and spotless yet modern.
-Credits:
-https://getbootstrap.com/
-
 Github link:
 https://jaslynnn.github.io/ID-ASG2/
 
@@ -13,11 +9,7 @@ Astir, a recipe sourcing website
 - Allows users to create an account 
 - Allows them to save notes in their notes section.
 - Dark mode so that the user will be able to read in comfort
-- 
-One or two paragraphs providing an overview of your project. Tell us about your project.
 
-Essentially, this part is your sales pitch.
- 
 ## Design Process
 - Created for people who are uncertain of what to eat for breakfast lunch and dinner and do not know where and how to source for recipes.
 - This is for people who want to become healthier by cooking at home
@@ -63,7 +55,6 @@ Include the Adobe XD wireframe as a folder. You can include the XD share url.
   
 - Notes section -Allows users to record notes on the recipes that they like after they press the save button, information entered will be saved and continue to be displayed there when they re-enter the website so that it will be convenient
   
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 
 ### Features Left to Implement

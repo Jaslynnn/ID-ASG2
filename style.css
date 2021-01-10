@@ -948,6 +948,9 @@ body{
  
 }
 
+.card2{
+  margin-left: 15%; 
+}
 .card-bodyR{
   font-size: 4vw;
   justify-content: center;
