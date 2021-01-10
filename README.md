@@ -90,30 +90,77 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 
 ## Testing
+Testing
 1. Dark-mode toggle
    1. Go to every-page one after another
    2. Click onto the white ball in the toggle
    3. The ball should move to the other side to reveal the moon icon and the color scheme of the webpage should become dark and have some contrast.
+   4. images should not have inverted colours
    
-2. Sign up page
+2. API
+   1. Go to the recipes page
+   2. click the "Start looking at breakfast"
+   3. Verify that Recipe cards appear with images and content
+   4. Hover over the cards to ensure that the card moves towards the right and the pictures move towards the left when hovered over.
+   5. click onto the lunch, dinner and dessert tab
+   6. verify that different recipes cards appear
+   7. click onto the others tab
+   8. Enter a search value into the search bar
+   9. click the search button
+   10. Verify that recipe cards of the search input is displayed
+   
+3. Sign up page
+   1. Try to click the link to the sign up button
+   2. Access the sign up page
+   3. Try to submit the form with invalid inputs and verify that an relevant error message appears.
+   4. Try to submit the form with all inputs valid and verify that a success message appears.
+   5. Ensure that you are directed to the my profile page
+   6. Ensure that the information entered in the previous page is shown in the profile page.
+  
+4. My profile page 
+   1. Enter information into the notes
+   2. Click the save button
+   3. Refresh the page and check that the information entered still remains there
+   
+5. Profile settings page
+   1. Go to the my profile page
+   2. Click the settings button
+   3. Ensure direction to the Profile settings page.
+   4. Information that was previously entered into the sign up page should be automatically displayed there.
+   5. Input in new information
+   6. Click save
+   7. Ensure direction to the my profile page
+   8. Check that information on my profile has been updated.
+   
+6. Profile page cannot be navigated to on the home page
+   1. Go to home
+   2. click onto the collapsable menu
+   3. click onto the profile tab
+   4. Verify that a error message that prompts user to log in appears
 
-3. Log in form on first page
+7. Log in form on first page
    1. Go to home page
    2. Try to submit the form with an invalid email and password and verify that an relevant error message appears.
    3. Try to submit the form with all inputs valid and verify that a success message appears.
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Bugs and issues
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+1. Inverted image lag
+   - As I had inverted the colour of an image 2 times to ensure that the color of the image is regular, the second invert sems to be affected by the transition timing i have applied for other properties (eg. width), thus there is a flash of inverted colour before the colour goes back to normal when switching to dark mode.
+  
+2. Inverted images of recipe cards during dark mode
+   - As I had applied the inverted 2 times, when I try a fetch element for another tab, the next results do not seem to have the second invert applied on it as it injects new html into the website. Thus the image colour is still inverted.
+  
+3. Log in form not working
+   - As I was unsure of how to use javascript to enable access to another webpage,this was still unsolved
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+4. Profile settings only works for the change of First name
+   - Although I have used the same local storage properties for the profile settings, my auto display does not seem to work for the only property that can be saved successfully. I have no idea why this is the case.
+   - However users can change settings from the sign up page.
+  
+5. Unable to change the colour of the nav bar words 
+
 
 ## Credits
 
@@ -136,9 +183,9 @@ If this section grows too long, you may want to split it off into a separate fil
   - This was the video I referenced to do the horizontal scrolling bar
   
 ### Content
-All of it was written by me
+All of it was written by me except for the data retrieved by the api.
 ### Media
-- The images used in this site were obtained from 
+The images used in this site were obtained from 
   
 - Cool liquid background - https://pikbest.com/free-backgrounds/banner.html
   
@@ -148,7 +195,12 @@ All of it was written by me
   
 - gudetama sailor moon - https://www.pinterest.com/pin/861454234972077894/
 
-- The rest of the images generated by the api are acredited by its source under "go to source" button for credits
+- The rest of the images generated by the api can be acredited by its source under "go to source" button for credits
 ### Acknowledgements
-
-- I received inspiration for this project from X
+Firstly,
+- I would like to thank my ID(Interactive Development) Teacher Ms Dai Mei Hua for her help and advice in my project as I would not have been able to complete it without her.
+  
+Secondly,
+I would like to thank my friends in IM01 for attempting to help me with my project.
+ 
+-  I received inspiration for this project from https://dribbble.com/

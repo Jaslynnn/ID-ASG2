@@ -545,6 +545,26 @@ color: white;
     background-color: blueviolet;
 }
 
+.card2{
+  margin-top: 3%;
+  border-radius:25px;
+  background-color: whitesmoke;
+  color: whitesmoke;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: -25%; 
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  padding: 1%;
+  text-align: center;
+
+}
+
+.card1:hover{
+  background-color: blueviolet;
+}
+
 .card-img-topR{
     margin:3%;
     border-radius:25px;
@@ -574,7 +594,7 @@ transform: translateX(-0%);
     margin-left: 5rem;
     padding-left: 5%;
     width:29rem;
-    justify-content: center;
+    justify-content: space-between  ;
     align-items: center;
 }
 
