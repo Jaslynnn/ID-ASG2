@@ -513,7 +513,7 @@ color: white;
     color: whitesmoke;
     border: 2px solid;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    flex-direction: column;
+    flex-direction: row;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
 
@@ -521,6 +521,8 @@ color: white;
 
 .card:hover{
     background-color: blueviolet;
+    transform: translateX(15%);
+
 }
 
 .card1{
@@ -532,7 +534,7 @@ color: white;
     align-items: flex-end;
     justify-content: end;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    margin-left: -25%; 
     transition: 0.5s;
     transition-timing-function: ease-in-out;
     padding: 1%;
@@ -608,6 +610,7 @@ margin-left: 2%;
 
 .card-text{
     padding: 2%;
+    
 }
 .card-bodyFirst{
     display:flex;
@@ -627,8 +630,8 @@ transition: width 10s;
 transition-timing-function: ease-in-out;
 transform: translateX(-0%);
 }
-.card-body{
 
+.card-body{
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -638,12 +641,12 @@ background-color: blueviolet;
 border-radius:25px;
 margin:2%;
 
-
 transition: width 10s;
 transition-timing-function: ease-in-out;
 transform: translateX(-0%);
 
 }
+
 
 .profilecard{
     justify-content: center;
@@ -734,7 +737,11 @@ border: none;
 
     color: white;
 }
-
+.tab-content{
+  justify-content: center;
+  padding-left: 25%;
+  margin-top: -5%;
+}
 .v-pills-tab{
     background-color: blueviolet;
 }
@@ -888,11 +895,22 @@ body{
     
 }
 
+.tab-content{
+  justify-content: center;
+  padding-left: 0%;
+  margin-top: -5%;
+
+}
 .card{
     justify-content: center;
-  
+
     margin-right: 5%;
   
+}
+.card:hover{
+  background-color: blueviolet;
+  transform: translateX(0%);
+
 }
 .card-img-top{
     width: 95%;

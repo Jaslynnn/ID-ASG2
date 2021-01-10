@@ -40,17 +40,29 @@ Include the Adobe XD wireframe as a folder. You can include the XD share url.
 
 ## Features
 - Horizontal Scroll - Allows users to navigate the home page horizontally by scrolling with their mouse.
+  
 - Dark-mode toggle - Allows users to toggle the color scheme of the whole webpage darker with a sun and moon icon.
+  
 - Anchors - Allows the user to navigate easily to the next item just with the click of a button.
+  
 - Collapsable navigation bar - More negative space so that the interface looks cleaner.
+  
 - Responsive images - Images zoom in or slide to the left when hovered over to create fluid user-experience.
+  
 - Side tab bar - Easy navigation and classification of items
+  
 - Recipe keyword Search bar - Easy for users to search for recipes by specific words
+  
 - Storage of users data - Makes use of local storage to store user information
+  
 - Auto display past data that has been entered before - Makes it more convenient for users when they want to log in
+  
 - Personalised profile card based on Sign in information - displays details entered by the user for a more personalised feel.
+
 - Profile settings - allows users to change past information entered into the system and update their data.
+  
 - Notes section -Allows users to record notes on the recipes that they like after they press the save button, information entered will be saved and continue to be displayed there when they re-enter the website so that it will be convenient
+  
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 
@@ -64,10 +76,15 @@ In this section, you should go over the different parts of your project, and des
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to create responsive elements.
+
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+  
 - [Fontawesome](https://fontawesome.com/)
     - The project uses the sun and moon icons from **Fontawesome** for the dark mode toggle.
+  
+- [Normalise.css](https://necolas.github.io/normalize.css/)
+    - The project uses **noramlise.css**.
 
 
 
@@ -77,9 +94,13 @@ In this section, you should mention all of the languages, frameworks, libraries,
    1. Go to every-page one after another
    2. Click onto the white ball in the toggle
    3. The ball should move to the other side to reveal the moon icon and the color scheme of the webpage should become dark and have some contrast.
+   
+2. Sign up page
 
-2. Log in form on first page
-   1. Go to home page,
+3. Log in form on first page
+   1. Go to home page
+   2. Try to submit the form with an invalid email and password and verify that an relevant error message appears.
+   3. Try to submit the form with all inputs valid and verify that a success message appears.
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Contact form:

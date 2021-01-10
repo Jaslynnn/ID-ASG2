@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
   let BreakfastSearch = document.querySelector("#v-pills-breakfast-tab")
   let BreakfastSearch2 = document.querySelector("#otherBreakfast")
   let LunchSearch = document.querySelector("#v-pills-lunch-tab")
@@ -260,6 +261,8 @@ $(document).ready(function () {
 
   }
 
+})
+
   //local storage for user actions after sign in
   function init() {
     if (localStorage.FirstName) {
@@ -326,12 +329,12 @@ $(document).ready(function () {
 
   }
 
+  
   function onSavePressed() {
     alert("You have signed up successfully.");
     localStorage.FirstName = document.getElementById("firstName").value;
     localStorage.LastName = document.getElementById("lastName").value;
     localStorage.Username = document.getElementById("username").value;
-
     localStorage.Email = document.getElementById("email").value;
     localStorage.Gender = document.getElementById("gender").value;
     localStorage.Password = document.getElementById("password").value;
@@ -356,6 +359,7 @@ $(document).ready(function () {
   //Add the username and profile page verification eg if the username match the local storage then you will have access to the My profile page, if not the thing will bw disabble(like add the html tage disabled inside.)
 
   //Display the username enters in sign up in the profile page
+
 
   function displayProfile() {
     var UsernameP = localStorage.getItem("Username")
@@ -387,4 +391,3 @@ $(document).ready(function () {
   }
 
 
-})
