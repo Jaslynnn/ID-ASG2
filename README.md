@@ -76,6 +76,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
   
 - [Normalise.css](https://necolas.github.io/normalize.css/)
     - The project uses **noramlise.css**.
+- [Edimam](https://developer.edamam.com/)
+     - This project uses the **edimam** recipe sourcing api for the content
 
 
 
@@ -173,7 +175,14 @@ Bugs and issues
   - https://youtu.be/OeaHnxahf40
   - This was the video I referenced to do the horizontal scrolling bar
   
+- API Edimam
+  - https://developer.edamam.com/
+  - This is the api that I used in my project
+  
 ### Content
+- API Edimam
+  - https://developer.edamam.com/
+  - This is the api that I used in my project to retreive the content
 All of it was written by me except for the data retrieved by the api.
 ### Media
 The images used in this site were obtained from 
