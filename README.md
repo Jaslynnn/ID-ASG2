@@ -203,4 +203,5 @@ Firstly,
 Secondly,
 I would like to thank my friends in IM01 for attempting to help me with my project.
  
+I would also like to thank my 3df teacher mr Kiew for giving some conmments
 -  I received inspiration for this project from https://dribbble.com/
